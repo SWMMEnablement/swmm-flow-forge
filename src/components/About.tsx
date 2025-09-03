@@ -5,31 +5,31 @@ import { Building2, Linkedin, Users, Target, ExternalLink } from 'lucide-react';
 
 const About = () => {
   const expertise = [
-    'SWMM Core Development',
-    'ICM & InfoWorks Integration', 
-    'InfoDrainage Workflows',
-    'Civil 3D Drainage Analysis',
-    'Ensemble & Uncertainty Modeling',
-    'JSON Schema Design',
-    'Cross-Platform Interoperability',
-    'Regulatory Compliance'
+    'ICM InfoWorks Expert',
+    'SWMM4/5 Conversions with AI', 
+    'Ruby Scripting Automation',
+    'PRN File Format Handling',
+    'Cross-Platform Integration',
+    'EPASWMM Technical Advisory',
+    'Hydraulic Model Validation',
+    'Storm Sewer & Flood Modeling'
   ];
 
   const achievements = [
     {
-      title: 'Autodesk Product Integration',
-      description: 'Direct access to ICM, InfoDrainage, and Civil 3D DA teams for seamless interoperability development.',
-      metric: '3 Products'
+      title: 'Industry Veteran',
+      description: '52 years with EPASWMM and 18 years leading water technology innovation at Innovyze/Autodesk.',
+      metric: '70 Years Total'
     },
     {
-      title: 'LinkedIn Thought Leadership',
-      description: 'Building a community around modern SWMM practices and probabilistic design methods.',
-      metric: '10K+ Network'
+      title: 'Technical Authority',
+      description: 'Author of SWMM5.org with 100+ articles on ICM integration, Ruby scripting, and file conversions.',
+      metric: 'SWMM5.org'
     },
     {
-      title: 'A+ Tier Vision',
-      description: 'Architecting practice-changing enhancements that transform how the profession approaches stormwater modeling.',
-      metric: '12 Month Roadmap'
+      title: 'AI Integration Pioneer',
+      description: 'Leading AI-powered conversion tools for SWMM4 to SWMM5 migration and PRN file processing.',
+      metric: 'AI Innovation'
     }
   ];
 
@@ -41,46 +41,50 @@ const About = () => {
           <div>
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-6">
               <Building2 className="mr-2 h-4 w-4" />
-              Autodesk SWMM Architect
+              Autodesk Water Technologist
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Transforming Stormwater Modeling from Single-Run to Probabilistic Design
+              52 Years of SWMM Innovation & 18 Years Leading Autodesk Water Technology
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At Autodesk, I leverage unique access to ICM, InfoDrainage, and Civil 3D Drainage Analysis 
-              to architect the next generation of SWMM interoperability. My focus: moving utilities from 
-              deterministic single-number answers to <span className="text-primary font-semibold">probabilistic design decisions</span> 
-              through structured governance and proven benchmarks.
+              As an <span className="text-primary font-semibold">Autodesk Water Technologist</span> for Storm Sewer and Flood modeling, 
+              I specialize in <span className="text-secondary font-semibold">ICM InfoWorks integration</span> and cross-platform interoperability. 
+              My work spans AI-powered file conversions, Ruby scripting automation, and bridging the gap between 
+              SWMM4/5 and modern hydraulic modeling platforms.
             </p>
 
             <div className="space-y-6 mb-8">
               <div>
                 <h3 className="font-semibold text-foreground mb-3">Core Mission</h3>
                 <p className="text-muted-foreground">
-                  Eliminate vendor lock-in and enable round-trip model exchanges while introducing 
-                  ensemble analysis as a first-class citizen in SWMM workflows.
+                  Bridging legacy SWMM systems with modern ICM workflows through AI-powered conversions, 
+                  Ruby automation, and seamless cross-platform model exchange capabilities.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-foreground mb-3">Strategic Advantage</h3>
+                <h3 className="font-semibold text-foreground mb-3">Technical Leadership</h3>
                 <p className="text-muted-foreground">
-                  Combining Autodesk's platform reach with LinkedIn's professional network to drive 
-                  adoption across 3+ GUIs, 10+ utilities, and 3+ universities within 12 months.
+                  Combining 52 years of EPASWMM expertise with cutting-edge AI tools to solve 
+                  real-world interoperability challenges for water professionals worldwide.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-hero">
-                <Linkedin className="mr-2 h-5 w-5" />
-                Follow My Journey
+              <Button className="btn-hero" asChild>
+                <a href="https://linkedin.com/in/robertdickinson" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="mr-2 h-5 w-5" />
+                  LinkedIn Articles
+                </a>
               </Button>
-              <Button variant="outline">
-                <ExternalLink className="mr-2 h-5 w-5" />
-                View LinkedIn Profile
+              <Button variant="outline" asChild>
+                <a href="https://swmm5.org" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  Visit SWMM5.org
+                </a>
               </Button>
             </div>
           </div>
@@ -122,8 +126,8 @@ const About = () => {
               <div className="text-center">
                 <h3 className="font-semibold text-primary mb-2">Professional Positioning</h3>
                 <p className="text-sm text-muted-foreground italic">
-                  "Autodesk | SWMM architect & interop evangelist | ICM • InfoDrainage • Civil 3D | 
-                  From single-run to probabilistic design."
+                  "Autodesk Water Technologist for Storm Sewer and Flood | Expert in ICM InfoWorks ICM SWMM/Ruby | 
+                  18 Years at Innovyze/Autodesk | 52 Years with EPASWMM"
                 </p>
               </div>
             </Card>

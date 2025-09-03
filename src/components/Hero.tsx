@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 animate-pulse-glow">
             <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse" />
-            SWMM Enhancement Proposals (SEPs) • A+ Tier Initiative
+            18 Years Innovyze/Autodesk • 52 Years EPASWMM • ICM Expert
           </div>
 
           {/* Main Headline */}
@@ -35,38 +35,38 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Leading <span className="text-primary font-semibold">SWMM interoperability</span> and <span className="text-secondary font-semibold">ensemble modeling</span> initiatives at Autodesk. 
-            Transforming single-run analysis into <span className="text-accent font-semibold">probabilistic design</span>.
+            <span className="text-primary font-semibold">Autodesk Water Technologist</span> for Storm Sewer & Flood modeling. 
+            Expert in <span className="text-secondary font-semibold">ICM InfoWorks integration</span> and <span className="text-accent font-semibold">Ruby scripting</span> for hydraulic modeling workflows.
           </p>
 
           {/* Key Value Props */}
           <div className="flex flex-wrap justify-center gap-6 mb-12 text-sm">
             <div className="flex items-center text-muted-foreground">
               <div className="w-2 h-2 bg-primary rounded-full mr-2" />
-              ICM • InfoDrainage • Civil 3D Integration
+              ICM InfoWorks • SWMM4/5 • Ruby Scripting
             </div>
             <div className="flex items-center text-muted-foreground">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2" />
-              Round-trip Model Interoperability
+              AI-Powered File Conversions
             </div>
             <div className="flex items-center text-muted-foreground">
               <div className="w-2 h-2 bg-accent rounded-full mr-2" />
-              P50/P90 Ensemble Analysis
+              Cross-Platform Interoperability
             </div>
           </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="btn-hero px-8 py-3 text-lg" asChild>
-              <a href="#sep-proposals">
-                Explore SEP Proposals
+              <a href="https://swmm5.org" target="_blank" rel="noopener noreferrer">
+                Visit SWMM5.org
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
             <Button variant="outline" size="lg" className="px-8 py-3 text-lg border-primary/30 hover:bg-primary/10" asChild>
-              <a href="#benchmarks">
+              <a href="https://linkedin.com/in/robertdickinson" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
-                Benchmark Pack
+                LinkedIn Articles
               </a>
             </Button>
           </div>
@@ -74,16 +74,16 @@ const Hero = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Curated Test Cases</div>
+              <div className="text-3xl font-bold text-primary mb-2">18</div>
+              <div className="text-sm text-muted-foreground">Years at Innovyze/Autodesk</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-secondary mb-2">3</div>
-              <div className="text-sm text-muted-foreground">Target GUI Integrations</div>
+              <div className="text-3xl font-bold text-secondary mb-2">52</div>
+              <div className="text-sm text-muted-foreground">Years with EPASWMM</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">12</div>
-              <div className="text-sm text-muted-foreground">Month Roadmap</div>
+              <div className="text-3xl font-bold text-accent mb-2">100+</div>
+              <div className="text-sm text-muted-foreground">Technical Articles</div>
             </div>
           </div>
         </div>
