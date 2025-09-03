@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* SWMM Professional Design System - Water & Engineering Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core brand colors - Technical water theme */
+    --background: 220 15% 97%;
+    --foreground: 210 20% 15%;
+    
+    /* Primary - Deep water blue */
+    --primary: 205 87% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 205 100% 45%;
+    
+    /* Secondary - Flow teal */
+    --secondary: 185 65% 35%;
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Accent - Hydraulic cyan */
+    --accent: 195 100% 50%;
+    --accent-foreground: 210 20% 15%;
 
+    /* Card & surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 20% 15%;
+    --card-border: 210 25% 88%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Muted for subtle elements */
+    --muted: 210 15% 93%;
+    --muted-foreground: 210 15% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Destructive - Warning red */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Borders and inputs */
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 205 87% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Engineering-focused gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(205 87% 25%), hsl(205 100% 45%));
+    --gradient-flow: linear-gradient(90deg, hsl(185 65% 35%), hsl(195 100% 50%));
+    --gradient-depth: linear-gradient(180deg, hsl(205 100% 45%), hsl(205 87% 25%));
+    
+    /* Technical shadows */
+    --shadow-technical: 0 4px 20px -4px hsl(205 87% 25% / 0.15);
+    --shadow-flow: 0 8px 32px -8px hsl(195 100% 50% / 0.2);
+    --shadow-glow: 0 0 40px hsl(205 100% 45% / 0.3);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Animation curves */
+    --ease-flow: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-smooth: all 0.3s var(--ease-flow);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +78,44 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark theme - Deep water simulation */
+    --background: 210 25% 8%;
+    --foreground: 210 15% 92%;
+    
+    --primary: 205 100% 65%;
+    --primary-foreground: 210 25% 8%;
+    --primary-glow: 205 100% 75%;
+    
+    --secondary: 185 65% 55%;
+    --secondary-foreground: 210 25% 8%;
+    
+    --accent: 195 100% 70%;
+    --accent-foreground: 210 25% 8%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 20% 12%;
+    --card-foreground: 210 15% 92%;
+    --card-border: 210 20% 20%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 15% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 15% 65%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 210 25% 8%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 205 100% 65%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(205 100% 65%), hsl(205 100% 75%));
+    --gradient-flow: linear-gradient(90deg, hsl(185 65% 55%), hsl(195 100% 70%));
+    --gradient-depth: linear-gradient(180deg, hsl(205 100% 75%), hsl(205 100% 65%));
+    
+    --shadow-technical: 0 4px 20px -4px hsl(205 100% 65% / 0.2);
+    --shadow-flow: 0 8px 32px -8px hsl(195 100% 70% / 0.25);
+    --shadow-glow: 0 0 40px hsl(205 100% 75% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +133,56 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Professional typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  
+  /* Technical code styling */
+  code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm;
+  }
+}
+
+@layer components {
+  /* Hero button variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground 
+           shadow-technical hover:shadow-flow transition-all duration-300 
+           hover:scale-[1.02] active:scale-[0.98];
+  }
+  
+  .btn-flow {
+    @apply bg-gradient-to-r from-secondary to-accent text-secondary-foreground
+           shadow-technical hover:shadow-glow transition-all duration-300;
+  }
+  
+  /* Card enhancements */
+  .card-technical {
+    @apply bg-card/80 backdrop-blur-sm border-card-border shadow-technical
+           hover:shadow-flow transition-all duration-300;
+  }
+  
+  /* Flow animations */
+  .animate-flow {
+    animation: flow 3s ease-in-out infinite;
+  }
+  
+  @keyframes flow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-4px) rotate(1deg); }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: var(--shadow-technical); }
+    50% { box-shadow: var(--shadow-glow); }
   }
 }
