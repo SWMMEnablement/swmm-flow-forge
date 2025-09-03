@@ -18,8 +18,8 @@ const About = () => {
   const achievements = [
     {
       title: 'Industry Veteran',
-      description: '52 years with EPASWMM and 18 years leading water technology innovation at Innovyze/Autodesk.',
-      metric: '70 Years Total'
+      description: '52 years with EPASWMM, including 18 years leading water technology innovation at Innovyze/Autodesk.',
+      metric: '52 Years'
     },
     {
       title: 'Technical Authority',
@@ -45,7 +45,7 @@ const About = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              52 Years of SWMM Innovation & 18 Years Leading Autodesk Water Technology
+              52 Years of SWMM Innovation, 18 Years Leading Autodesk Water Technology
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -67,8 +67,8 @@ const About = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-3">Technical Leadership</h3>
                 <p className="text-muted-foreground">
-                  Combining 52 years of EPASWMM expertise with cutting-edge AI tools to solve 
-                  real-world interoperability challenges for water professionals worldwide.
+                  With 52 years of EPASWMM expertise, combining deep legacy knowledge with cutting-edge AI tools 
+                  to solve real-world interoperability challenges for water professionals worldwide.
                 </p>
               </div>
             </div>
