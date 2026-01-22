@@ -13,7 +13,9 @@ import {
   Building2,
   MapPin,
   ExternalLink,
-  Send
+  Send,
+  Github,
+  Twitter
 } from 'lucide-react';
 
 const Contact = () => {
@@ -25,6 +27,22 @@ const Contact = () => {
       action: 'Connect on LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
       link: 'https://www.linkedin.com/in/robertdickinson/'
+    },
+    {
+      type: 'GitHub',
+      primary: false,
+      description: 'Open source projects & code samples',
+      action: 'View GitHub',
+      icon: <Github className="h-5 w-5" />,
+      link: 'https://github.com/dickinsonre'
+    },
+    {
+      type: 'Twitter/X',
+      primary: false,
+      description: 'Industry updates & quick insights',
+      action: 'Follow on X',
+      icon: <Twitter className="h-5 w-5" />,
+      link: 'https://x.com/RDickinson'
     },
     {
       type: 'Email',

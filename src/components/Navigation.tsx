@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Linkedin, Sun, Moon } from 'lucide-react';
+import { Menu, X, Linkedin, Sun, Moon, Github, Twitter } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,6 +94,26 @@ const Navigation = () => {
                 <Linkedin className="h-4 w-4" />
               </a>
             </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a 
+                href="https://github.com/dickinsonre" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+              >
+                <Github className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a 
+                href="https://x.com/RDickinson" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Twitter Profile"
+              >
+                <Twitter className="h-4 w-4" />
+              </a>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -149,6 +169,26 @@ const Navigation = () => {
                     aria-label="LinkedIn Profile"
                   >
                     <Linkedin className="h-4 w-4" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <a 
+                    href="https://github.com/dickinsonre" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="GitHub Profile"
+                  >
+                    <Github className="h-4 w-4" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <a 
+                    href="https://x.com/RDickinson" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Twitter Profile"
+                  >
+                    <Twitter className="h-4 w-4" />
                   </a>
                 </Button>
               </div>
