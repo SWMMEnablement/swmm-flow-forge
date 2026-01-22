@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { 
   Mail, 
   Linkedin, 
-  Github, 
+  Globe, 
   FileText, 
   Calendar, 
   Building2,
@@ -39,8 +39,16 @@ const Contact = () => {
       primary: false,
       description: 'Technical blog & resources',
       action: 'Visit SWMM5.org',
-      icon: <Github className="h-5 w-5" />,
+      icon: <Globe className="h-5 w-5" />,
       link: 'https://swmm5.org'
+    },
+    {
+      type: 'OpenSWMM.org',
+      primary: false,
+      description: 'Community hub & knowledge base',
+      action: 'Visit OpenSWMM.org',
+      icon: <Globe className="h-5 w-5" />,
+      link: 'https://www.openswmm.org'
     }
   ];
 

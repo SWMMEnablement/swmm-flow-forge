@@ -56,6 +56,11 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.querySelector(item.href);
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {item.name}
@@ -125,7 +130,12 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className="text-foreground hover:text-primary block px-3 py-2 text-base font-medium transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    const element = document.querySelector(item.href);
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   {item.name}
                 </a>
