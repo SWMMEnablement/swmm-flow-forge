@@ -1,15 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Github, Linkedin, FileText } from 'lucide-react';
+import { Menu, X, Linkedin, Sun, Moon } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    // Check for saved preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      setIsDark(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    setIsDark(!isDark);
+    if (isDark) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  };
 
   const navItems = [
     { name: 'About', href: '#about' },
+    { name: 'Timeline', href: '#timeline' },
+    { name: 'Resources', href: '#resources' },
+    { name: 'Articles', href: '#articles' },
     { name: 'SEP Proposals', href: '#sep-proposals' },
-    { name: 'Benchmark Pack', href: '#benchmarks' },
-    { name: 'Insights', href: '#insights' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -26,7 +50,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <a
@@ -40,22 +64,48 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-4 w-4" />
-              </a>
+          {/* Social Links & Dark Mode Toggle */}
+          <div className="hidden md:flex items-center space-x-2">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={toggleDarkMode}
+              className="h-9 w-9 p-0"
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDark ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Github className="h-4 w-4" />
+              <a 
+                href="https://www.linkedin.com/in/robertdickinson/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin className="h-4 w-4" />
               </a>
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={toggleDarkMode}
+              className="h-9 w-9 p-0"
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDark ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </Button>
             <Button
               variant="ghost"
               size="sm"
@@ -82,13 +132,13 @@ const Navigation = () => {
               ))}
               <div className="flex space-x-4 px-3 pt-2">
                 <Button variant="ghost" size="sm" asChild>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href="https://www.linkedin.com/in/robertdickinson/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile"
+                  >
                     <Linkedin className="h-4 w-4" />
-                  </a>
-                </Button>
-                <Button variant="ghost" size="sm" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4" />
                   </a>
                 </Button>
               </div>

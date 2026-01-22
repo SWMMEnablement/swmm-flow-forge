@@ -21,7 +21,7 @@ const BlogArticles = () => {
       tags: ['AI', 'SWMM4', 'SWMM5', 'Conversion'],
       icon: Cpu,
       date: '2025',
-      url: 'https://linkedin.com/in/robertdickinson'
+      url: 'https://www.linkedin.com/in/robertdickinson/'
     },
     {
       title: 'Converting ICM InfoWorks PRN Files to CFS Units',
@@ -29,7 +29,7 @@ const BlogArticles = () => {
       tags: ['ICM', 'PRN Files', 'AI'],
       icon: FileText,
       date: '2025',
-      url: 'https://linkedin.com/in/robertdickinson'
+      url: 'https://www.linkedin.com/in/robertdickinson/'
     },
     {
       title: 'Getting Started with Ruby Scripting for InfoWorks',
@@ -37,7 +37,7 @@ const BlogArticles = () => {
       tags: ['Ruby', 'InfoWorks', 'Automation'],
       icon: Code2,
       date: '2024',
-      url: 'https://linkedin.com/in/robertdickinson'
+      url: 'https://www.linkedin.com/in/robertdickinson/'
     },
     {
       title: 'Exporting Conduit Parameters to CSV with Ruby',
@@ -45,7 +45,7 @@ const BlogArticles = () => {
       tags: ['Ruby', 'CSV', 'ICM'],
       icon: Code2,
       date: '2024',
-      url: 'https://linkedin.com/in/robertdickinson'
+      url: 'https://www.linkedin.com/in/robertdickinson/'
     }
   ];
 
@@ -153,7 +153,7 @@ const BlogArticles = () => {
               <Badge className="bg-primary/10 text-primary border-primary/20">Featured</Badge>
             </div>
             <Button variant="outline" size="sm" asChild>
-              <a href="https://linkedin.com/in/robertdickinson" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/robertdickinson/" target="_blank" rel="noopener noreferrer">
                 View All
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -202,7 +202,7 @@ const BlogArticles = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button className="btn-hero" asChild>
-                <a href="https://linkedin.com/in/robertdickinson" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/robertdickinson/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-5 w-5" />
                   Follow on LinkedIn
                 </a>

@@ -24,23 +24,23 @@ const Contact = () => {
       description: 'Professional networking & SEP discussions',
       action: 'Connect on LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
-      link: 'https://linkedin.com'
+      link: 'https://www.linkedin.com/in/robertdickinson/'
     },
     {
       type: 'Email',
       primary: false,
       description: 'Pilot projects & technical collaboration',
-      action: 'robert.dickinson@autodesk.com',
+      action: 'robert.dickinson@gmail.com',
       icon: <Mail className="h-5 w-5" />,
-      link: 'mailto:robert.dickinson@autodesk.com'
+      link: 'mailto:robert.dickinson@gmail.com'
     },
     {
-      type: 'GitHub',
+      type: 'SWMM5.org',
       primary: false,
-      description: 'SEP proposals & benchmark contributions',
-      action: 'View Repositories',
+      description: 'Technical blog & resources',
+      action: 'Visit SWMM5.org',
       icon: <Github className="h-5 w-5" />,
-      link: 'https://github.com'
+      link: 'https://swmm5.org'
     }
   ];
 
