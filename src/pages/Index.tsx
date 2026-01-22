@@ -5,7 +5,9 @@ import LazyLoadWrapper from "@/components/LazyLoadWrapper";
 
 // Lazy load below-the-fold components to reduce initial bundle size
 const About = lazy(() => import("@/components/About"));
+const Timeline = lazy(() => import("@/components/Timeline"));
 const Resources = lazy(() => import("@/components/Resources"));
+const BlogArticles = lazy(() => import("@/components/BlogArticles"));
 const SEPProposals = lazy(() => import("@/components/SEPProposals"));
 const LinkedInInsights = lazy(() => import("@/components/LinkedInInsights"));
 const Contact = lazy(() => import("@/components/Contact"));
@@ -41,7 +43,19 @@ const Index = () => {
       
       <LazyLoadWrapper fallback={<SectionSkeleton />}>
         <Suspense fallback={<SectionSkeleton />}>
+          <Timeline />
+        </Suspense>
+      </LazyLoadWrapper>
+      
+      <LazyLoadWrapper fallback={<SectionSkeleton />}>
+        <Suspense fallback={<SectionSkeleton />}>
           <Resources />
+        </Suspense>
+      </LazyLoadWrapper>
+      
+      <LazyLoadWrapper fallback={<SectionSkeleton />}>
+        <Suspense fallback={<SectionSkeleton />}>
+          <BlogArticles />
         </Suspense>
       </LazyLoadWrapper>
       
