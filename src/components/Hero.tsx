@@ -70,7 +70,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" className="px-8 py-3 text-lg border-primary/30 hover:bg-primary/10" asChild>
-              <a href="https://linkedin.com/in/robertdickinson" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/robertdickinson/" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
                 LinkedIn Articles
               </a>
