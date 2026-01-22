@@ -73,7 +73,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-wrap gap-4">
               <Button className="btn-hero" asChild>
                 <a href="https://linkedin.com/in/robertdickinson" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-5 w-5" />
@@ -83,7 +83,13 @@ const About = () => {
               <Button variant="outline" asChild>
                 <a href="https://swmm5.org" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-5 w-5" />
-                  Visit SWMM5.org
+                  SWMM5.org
+                </a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href="https://openswmm.org" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  OpenSWMM.org
                 </a>
               </Button>
             </div>
