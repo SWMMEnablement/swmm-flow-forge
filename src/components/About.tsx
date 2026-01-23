@@ -132,8 +132,8 @@ const About = () => {
               <div className="text-center">
                 <h3 className="font-semibold text-primary mb-2">Professional Positioning</h3>
                 <p className="text-sm text-muted-foreground italic">
-                  "Autodesk Water Technologist for Storm Sewer and Flood | Expert in ICM InfoWorks ICM SWMM/Ruby | 
-                  18 Years at Innovyze/Autodesk | 52 Years with EPASWMM"
+                  "Innovyze and Autodesk SSF Simulation Software Expert for Storm Sewer and Flood | 
+                  ICM InfoWorks ICM SWMM/Ruby Specialist | 18 Years at Innovyze/Autodesk | 52 Years with EPASWMM"
                 </p>
               </div>
             </Card>
