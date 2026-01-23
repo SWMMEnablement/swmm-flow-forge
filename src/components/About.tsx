@@ -41,7 +41,7 @@ const About = () => {
           <div>
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-6">
               <Building2 className="mr-2 h-4 w-4" />
-              Autodesk Water Technologist
+              Innovyze and Autodesk SSF Simulation Software
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
@@ -49,7 +49,7 @@ const About = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              As an <span className="text-primary font-semibold">Autodesk Water Technologist</span> for Storm Sewer and Flood modeling, 
+              As an expert in <span className="text-primary font-semibold">Innovyze and Autodesk SSF Simulation Software</span> for Storm Sewer and Flood modeling,
               I specialize in <span className="text-secondary font-semibold">ICM InfoWorks integration</span> and cross-platform interoperability. 
               My work spans AI-powered file conversions, Ruby scripting automation, and bridging the gap between 
               SWMM4/5 and modern hydraulic modeling platforms.

@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            <span className="text-primary font-semibold">Autodesk Water Technologist</span> for Storm Sewer & Flood modeling. 
+            <span className="text-primary font-semibold">Innovyze and Autodesk SSF Simulation Software</span> for Storm Sewer & Flood modeling.
             Expert in <span className="text-secondary font-semibold">ICM InfoWorks integration</span> and <span className="text-accent font-semibold">Ruby scripting</span> for hydraulic modeling workflows.
           </p>
 
