@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download, ExternalLink } from 'lucide-react';
 import heroImage from '@/assets/hero-bg.jpg';
+import WaterParticles from './WaterParticles';
 
 const Hero = () => {
   return (
@@ -14,6 +15,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50" />
+        <WaterParticles />
       </div>
 
       {/* Content */}
