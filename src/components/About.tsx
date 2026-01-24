@@ -1,7 +1,9 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Building2, Linkedin, Users, Target, ExternalLink } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Building2, Linkedin, Target, ExternalLink } from 'lucide-react';
+import profileHeadshot from '@/assets/profile-headshot.jpeg';
 
 const About = () => {
   const expertise = [
@@ -39,9 +41,19 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-6">
-              <Building2 className="mr-2 h-4 w-4" />
-              Innovyze and Autodesk SSF Simulation Software
+            {/* Profile Photo & Header */}
+            <div className="flex items-center gap-6 mb-6">
+              <Avatar className="h-24 w-24 ring-4 ring-primary/20 shadow-lg">
+                <AvatarImage src={profileHeadshot} alt="Robert Dickinson - SWMM Expert" className="object-cover" />
+                <AvatarFallback className="text-2xl font-bold bg-primary/10 text-primary">RD</AvatarFallback>
+              </Avatar>
+              <div>
+                <h3 className="text-xl font-bold text-foreground">Robert Dickinson</h3>
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-medium mt-2">
+                  <Building2 className="mr-1.5 h-3 w-3" />
+                  Innovyze & Autodesk SSF Expert
+                </div>
+              </div>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
